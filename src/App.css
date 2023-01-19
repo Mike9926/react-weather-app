@@ -1,38 +1,132 @@
-.App {
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+}
+.welcome {
+  /*make contents be centered */
   text-align: center;
+
+  /*make ma div be fit to content */
+  width: fit-content;
+/*make my dive be on the center of the page */
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 200;
+  /*make my div have rounded borders */
+  padding: 5px;
+  border-radius: 10px;
+  border: 1px solid rgb(14, 13, 13);
+}
+.search-container {
+  position: relative;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.search-button {
+  position: absolute;
+  right: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.input {
+  padding: 1px;
+  width: 80%;
+  margin-right: 10px;
+  border: 1px solid lightgray;
+  border-radius: 6px;
+  font-size: 16px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.input:focus {
+
+  outline: none;
+}
+
+.weather-data {
+  margin-top: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0px;
+}
+
+.city {
+  font-size: 30px;
+  font-weight: 200;
+}
+
+.temp {
+  font-size: 40px;
+  padding: 10px;
+  border: 1px solid lightgray;
+  border-radius: 12px;
+}
+
+.weather {
+  font-size: 30px;
+  font-weight: 200;
+}
+
+.striped-table {
+  width: fit-content;
+  border-collapse: collapse;
+
+}
+
+.striped-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+
+}
+
+
+.content {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* make my history-container be on the center of the page */
+.history-container {
+  margin: auto;
+  display: flex;
+  justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* add a picture of the sky for my modal background that fits properly */
+.modal-content {
+  
+  background-image: url(https://images.pexels.com/photos/414659/pexels-photo-414659.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  /* make the image be full width */
+  background-size: cover;
+  /* make the image be centered */
+  background-position: center;
+  /* make the image be repeated */
+  background-repeat: no-repeat;
+  /* make the image alittle less pronounced */
+  opacity: 0.8;
+  font-size: 20px;
+  font-weight: 600;
+/*make height fill content */
+  height: fit-content;
+  /*make my div have rounded borders */
+  padding: 5px;
+  border-radius: 10px;
+  border: 1px solid rgb(14, 13, 13);
 }
